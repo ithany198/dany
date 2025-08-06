@@ -1,0 +1,1818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForexMaster Pro - Free Ultimate Trading Platform & Academy | AI Signals & Professional Education</title>
+    <meta name="description" content="ForexMaster Pro: The world's most comprehensive FREE trading platform with AI-powered signals (92% accuracy), professional education, and institutional-grade tools. Join 500,000+ traders worldwide - completely free!">
+    <meta name="keywords" content="free forex trading, free AI trading signals, free trading platform, free trading education, cryptocurrency, stocks, professional trading, market analysis, free trading courses, forex academy">
+    <meta name="author" content="ForexMaster Pro">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://forexmasterpro.com">
+    <meta property="og:title" content="ForexMaster Pro - Free Ultimate Trading Platform & Academy">
+    <meta property="og:description" content="Join 500,000+ traders using FREE AI-powered signals with 92% accuracy. Professional education and institutional-grade tools - completely free!">
+    <meta property="og:image" content="https://forexmasterpro.com/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://forexmasterpro.com">
+    <meta property="twitter:title" content="ForexMaster Pro - Free Ultimate Trading Platform">
+    <meta property="twitter:description" content="FREE AI-powered trading signals with 92% accuracy. Professional education and institutional tools - all free!">
+    <meta property="twitter:image" content="https://forexmasterpro.com/twitter-image.jpg">
+    
+    <link rel="canonical" href="https://forexmasterpro.com">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "ForexMaster Pro",
+        "description": "Free professional trading platform with AI-powered signals and comprehensive education",
+        "url": "https://forexmasterpro.com",
+        "logo": "https://forexmasterpro.com/logo.png",
+        "sameAs": [
+            "https://twitter.com/forexmasterpro",
+            "https://facebook.com/forexmasterpro",
+            "https://linkedin.com/company/forexmasterpro"
+        ],
+        "offers": {
+            "@type": "Offer",
+            "name": "Free Trading Education & Tools",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --success-gradient: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            --dark-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --gold-gradient: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
+            --free-gradient: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body { 
+            font-family: 'Inter', sans-serif; 
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+            background: linear-gradient(to bottom, #0f172a, #1e293b);
+        }
+        
+        /* Professional Gradients */
+        .gradient-primary { background: var(--primary-gradient); }
+        .gradient-secondary { background: var(--secondary-gradient); }
+        .gradient-success { background: var(--success-gradient); }
+        .gradient-dark { background: var(--dark-gradient); }
+        .gradient-gold { background: var(--gold-gradient); }
+        .gradient-free { background: var(--free-gradient); }
+        
+        /* Advanced Animations */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .slide-in-left {
+            animation: slideInLeft 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        
+        @keyframes slideInLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .scale-in {
+            animation: scaleIn 0.6s ease-out forwards;
+            opacity: 0;
+            transform: scale(0.9);
+        }
+        
+        @keyframes scaleIn {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        /* Professional Card Styles */
+        .pro-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pro-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--primary-gradient);
+        }
+        
+        .pro-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Dark theme cards */
+        .dark-card {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .dark-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Professional Navigation */
+        .pro-nav {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .nav-link {
+            position: relative;
+            padding: 12px 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            text-decoration: none;
+            color: #cbd5e1;
+        }
+        
+        .nav-link:hover {
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--primary-gradient);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        
+        .nav-link:hover::after {
+            width: 80%;
+        }
+        
+        /* Professional Buttons */
+        .btn-primary {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+            text-decoration: none;
+            color: white;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #667eea;
+            border: 2px solid #667eea;
+            padding: 12px 26px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-secondary:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+            text-decoration: none;
+        }
+        
+        .btn-free {
+            background: var(--free-gradient);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-free:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(76, 175, 80, 0.4);
+            text-decoration: none;
+            color: white;
+        }
+        
+        /* Enhanced Button Styles */
+        .btn-lg {
+            padding: 18px 36px;
+            font-size: 1.1rem;
+        }
+        
+        .btn-sm {
+            padding: 8px 16px;
+            font-size: 0.875rem;
+        }
+        
+        /* Professional Hero Section */
+        .hero-section {
+            min-height: 100vh;
+            background: var(--dark-gradient);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23667eea" stop-opacity="0.1"/><stop offset="100%" stop-color="%23764ba2" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="300" fill="url(%23a)"/><circle cx="800" cy="800" r="400" fill="url(%23a)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* Professional Stats */
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+        
+        /* Professional Sections */
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            position: relative;
+        }
+        
+        .section-title {
+            font-size: 3rem;
+            font-weight: 800;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        .section-divider {
+            width: 80px;
+            height: 4px;
+            background: var(--primary-gradient);
+            margin: 2rem auto;
+            border-radius: 2px;
+        }
+        
+        /* News Ticker */
+        .news-ticker {
+            background: var(--dark-gradient);
+            color: white;
+            padding: 12px 0;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .news-content {
+            animation: scroll 60s linear infinite;
+            white-space: nowrap;
+        }
+        
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        
+        /* Badge Styles */
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .badge-free { background: #22c55e; color: white; }
+        .badge-hot { background: #ef4444; color: white; }
+        .badge-new { background: #3b82f6; color: white; }
+        .badge-pro { background: #8b5cf6; color: white; }
+        
+        /* Avatar Styles */
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: inline-block;
+        }
+        
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Grid Layouts */
+        .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+        .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+        
+        @media (max-width: 768px) {
+            .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+            .section-title { font-size: 2rem; }
+            .hero-section { min-height: 80vh; }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .grid-4 { grid-template-columns: repeat(2, 1fr); }
+            .grid-3 { grid-template-columns: repeat(2, 1fr); }
+        }
+        
+        /* Loading Animation */
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(102, 126, 234, 0.2);
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Pulse Animation */
+        .pulse-dot {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.1); }
+        }
+        
+        /* Icon Styles */
+        .icon {
+            width: 1.5rem;
+            height: 1.5rem;
+            display: inline-block;
+        }
+        
+        .icon-lg {
+            width: 2rem;
+            height: 2rem;
+        }
+        
+        .icon-xl {
+            width: 3rem;
+            height: 3rem;
+        }
+        
+        /* Text Utilities */
+        .text-white { color: white; }
+        .text-gray-300 { color: #d1d5db; }
+        .text-gray-400 { color: #9ca3af; }
+        .text-gray-500 { color: #6b7280; }
+        .text-blue-400 { color: #60a5fa; }
+        .text-green-400 { color: #4ade80; }
+        .text-red-400 { color: #f87171; }
+        .text-yellow-400 { color: #facc15; }
+        .text-purple-400 { color: #c084fc; }
+        
+        /* Background Utilities */
+        .bg-slate-800 { background-color: rgba(30, 41, 59, 0.8); }
+        .bg-slate-900 { background-color: rgba(15, 23, 42, 0.9); }
+        .bg-slate-950 { background-color: #020617; }
+        
+        /* Spacing Utilities */
+        .p-4 { padding: 1rem; }
+        .p-6 { padding: 1.5rem; }
+        .p-8 { padding: 2rem; }
+        .py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+        .mb-4 { margin-bottom: 1rem; }
+        .mb-6 { margin-bottom: 1.5rem; }
+        .mb-8 { margin-bottom: 2rem; }
+        .mb-12 { margin-bottom: 3rem; }
+        .mb-16 { margin-bottom: 4rem; }
+        
+        /* Flex Utilities */
+        .flex { display: flex; }
+        .flex-col { flex-direction: column; }
+        .items-center { align-items: center; }
+        .justify-center { justify-content: center; }
+        .justify-between { justify-content: space-between; }
+        .space-x-4 > * + * { margin-left: 1rem; }
+        .space-y-4 > * + * { margin-top: 1rem; }
+        
+        /* Professional Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #1e293b;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-gradient);
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--secondary-gradient);
+        }
+    </style>
+</head>
+<body>
+    <!-- Professional Navigation -->
+    <nav class="pro-nav fixed top-0 left-0 right-0 z-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center py-4">
+                <!-- Brand Logo -->
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">📈</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-white">ForexMaster Pro</h1>
+                        <p class="text-sm text-blue-400">🆓 Free Ultimate Trading Ecosystem</p>
+                    </div>
+                </div>
+                
+                <!-- Enhanced Navigation Links -->
+                <div class="hidden lg:flex items-center space-x-2">
+                    <a href="#home" class="nav-link">🏠 Home</a>
+                    <a href="#books" class="nav-link">📚 Library</a>
+                    <a href="#courses" class="nav-link">🎓 Courses</a>
+                    <a href="#forum" class="nav-link">💬 Forum</a>
+                    <a href="#tools" class="nav-link">🛠️ Tools</a>
+                    <a href="#blog" class="nav-link">📰 Blog</a>
+                    <a href="#community" class="nav-link">🌐 Community</a>
+                    <button class="btn-secondary ml-4">🆓 Demo</button>
+                    <button class="btn-free">🎁 Join Free</button>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden p-2 rounded-lg hover:bg-gray-700">
+                    <span class="text-white text-2xl">☰</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Professional News Ticker -->
+    <div class="news-ticker mt-20">
+        <div class="news-content">
+            <span class="inline-flex items-center space-x-8">
+                <span class="flex items-center space-x-2">
+                    <span class="pulse-dot w-2 h-2 bg-green-400 rounded-full"></span>
+                    <span>🆓 FREE PLATFORM: All content now free forever • 250,000+ traders using free AI signals • Complete trading education at no cost • Professional tools available to everyone • Live market data & analysis</span>
+                </span>
+            </span>
+        </div>
+    </div>
+    
+    <!-- Enhanced Hero Section -->
+    <section id="home" class="hero-section flex items-center">
+        <div class="hero-content w-full">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <!-- Hero Content -->
+                    <div class="text-white fade-in-up">
+                        <div class="flex items-center space-x-3 mb-6">
+                            <span class="badge badge-free">🚀 Trusted by 250,000+ Traders</span>
+                        </div>
+                        
+                        <h1 class="text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                            Master <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">Forex Trading</span>
+                            <br />
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">Transform Your Life</span>
+                        </h1>
+                        
+                        <p class="text-2xl mb-10 opacity-90 leading-relaxed">
+                            Join the world's most comprehensive <span class="text-yellow-400 font-semibold">FREE</span> trading education platform. 
+                            Access premium courses, exclusive strategies, expert community, and professional tools that have created thousands of successful traders.
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 mb-12">
+                            <button class="btn-free btn-lg" onclick="startLearning()">
+                                📚 Start Learning FREE
+                            </button>
+                            <button class="btn-secondary btn-lg" onclick="joinCommunity()">
+                                👥 Join Community
+                            </button>
+                            <button class="btn-primary btn-lg" onclick="watchDemo()">
+                                ▶️ Watch Demo
+                            </button>
+                        </div>
+                        
+                        <!-- Enhanced Hero Stats -->
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+                            <div class="stat-card scale-in" style="animation-delay: 0.2s;">
+                                <div class="stat-number">250K+</div>
+                                <div class="text-sm opacity-80">Success Stories</div>
+                            </div>
+                            <div class="stat-card scale-in" style="animation-delay: 0.4s;">
+                                <div class="stat-number">$2.1B+</div>
+                                <div class="text-sm opacity-80">Profits Generated</div>
+                            </div>
+                            <div class="stat-card scale-in" style="animation-delay: 0.6s;">
+                                <div class="stat-number">500+</div>
+                                <div class="text-sm opacity-80">Free Resources</div>
+                            </div>
+                            <div class="stat-card scale-in" style="animation-delay: 0.8s;">
+                                <div class="stat-number">24/7</div>
+                                <div class="text-sm opacity-80">Expert Support</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Hero Dashboard -->
+                    <div class="slide-in-left" style="animation-delay: 0.3s;">
+                        <div class="dark-card p-8 text-white">
+                            <div class="text-center mb-6">
+                                <div class="w-16 h-16 gradient-free rounded-2xl flex items-center justify-center mx-auto mb-4">
+                                    <span class="text-white font-bold text-2xl">🆓</span>
+                                </div>
+                                <h3 class="text-2xl font-bold mb-2">🆓 Free Platform Stats</h3>
+                                <p class="text-gray-400">All features completely free</p>
+                            </div>
+                            
+                            <div class="grid grid-cols-2 gap-6 mb-6">
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold text-green-400">250K+</div>
+                                    <div class="text-sm text-gray-400">Free Users</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold text-yellow-400">$0</div>
+                                    <div class="text-sm text-gray-400">Cost Forever</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold text-purple-400">100%</div>
+                                    <div class="text-sm text-gray-400">Free Content</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold text-blue-400">24/7</div>
+                                    <div class="text-sm text-gray-400">Free Support</div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-slate-800 rounded-xl p-4">
+                                <div class="text-sm font-semibold mb-3">🌍 Live Platform Activity</div>
+                                <div class="space-y-2">
+                                    <div class="flex justify-between text-sm">
+                                        <span class="flex items-center space-x-2">
+                                            <span class="pulse-dot w-2 h-2 bg-green-400 rounded-full"></span>
+                                            <span>Free Users Online</span>
+                                        </span>
+                                        <span class="font-semibold text-green-400">45,234</span>
+                                    </div>
+                                    <div class="flex justify-between text-sm">
+                                        <span class="flex items-center space-x-2">
+                                            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                            <span>Free Trades Active</span>
+                                        </span>
+                                        <span class="font-semibold text-blue-400">12,567</span>
+                                    </div>
+                                    <div class="flex justify-between text-sm">
+                                        <span class="flex items-center space-x-2">
+                                            <span class="w-2 h-2 bg-purple-500 rounded-full"></span>
+                                            <span>Free Learning</span>
+                                        </span>
+                                        <span class="font-semibold text-purple-400">8,901</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators Section -->
+    <section class="py-16 bg-white/5 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h3 class="text-2xl font-bold text-white mb-4">Trusted by Leading Financial Publications</h3>
+                <div class="flex justify-center items-center space-x-12 opacity-70 flex-wrap">
+                    <div class="text-slate-400 font-semibold text-lg m-2">📰 Forbes</div>
+                    <div class="text-slate-400 font-semibold text-lg m-2">📊 Bloomberg</div>
+                    <div class="text-slate-400 font-semibold text-lg m-2">🌐 Reuters</div>
+                    <div class="text-slate-400 font-semibold text-lg m-2">📺 CNBC</div>
+                    <div class="text-slate-400 font-semibold text-lg m-2">💼 Yahoo Finance</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Blog Posts Section -->
+    <section id="blog" class="py-20 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="section-header">
+                <div class="badge badge-hot mb-6">🔥 Trending Content</div>
+                <h2 class="section-title">Latest Trading Insights</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    Discover powerful strategies, market insights, and success stories that will transform your trading journey.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Blog Post 1 -->
+                <div class="dark-card overflow-hidden">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=200&fit=crop" alt="Trading Mistakes" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="badge badge-hot">Education</span>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-black/70 rounded-full px-3 py-1">
+                            <span class="text-white text-sm">5 min read</span>
+                        </div>
+                    </div>
+                    <div class="p-6 text-white">
+                        <h3 class="text-xl font-bold mb-3">7 Deadly Forex Trading Mistakes That Destroy Accounts</h3>
+                        <p class="text-gray-300 mb-4">Discover the most common mistakes that wipe out 90% of new traders and learn how to avoid them completely.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4 text-sm text-gray-400">
+                                <span class="flex items-center">👁️ 12,500</span>
+                                <span class="flex items-center">❤️ 890</span>
+                            </div>
+                            <button class="btn-sm btn-primary">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="dark-card overflow-hidden">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&h=200&fit=crop" alt="Trading Challenge" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="badge badge-new">Success Stories</span>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-black/70 rounded-full px-3 py-1">
+                            <span class="text-white text-sm">8 min read</span>
+                        </div>
+                    </div>
+                    <div class="p-6 text-white">
+                        <h3 class="text-xl font-bold mb-3">The $10,000 to $100,000 Challenge: Real Trader Results</h3>
+                        <p class="text-gray-300 mb-4">Follow along as our community member documents their journey from $10K to $100K in 12 months.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4 text-sm text-gray-400">
+                                <span class="flex items-center">👁️ 18,900</span>
+                                <span class="flex items-center">❤️ 1,250</span>
+                            </div>
+                            <button class="btn-sm btn-primary">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="dark-card overflow-hidden">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=200&fit=crop" alt="Trading Psychology" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="badge badge-pro">Psychology</span>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-black/70 rounded-full px-3 py-1">
+                            <span class="text-white text-sm">6 min read</span>
+                        </div>
+                    </div>
+                    <div class="p-6 text-white">
+                        <h3 class="text-xl font-bold mb-3">Why 95% of Forex Traders Fail (And How You Can Be in the 5%)</h3>
+                        <p class="text-gray-300 mb-4">Shocking statistics revealed: The real reasons most traders fail and the simple mindset shift that separates winners.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4 text-sm text-gray-400">
+                                <span class="flex items-center">👁️ 15,600</span>
+                                <span class="flex items-center">❤️ 1,100</span>
+                            </div>
+                            <button class="btn-sm btn-primary">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button class="btn-lg btn-primary">
+                    📰 View All Articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Trading Books Library Section -->
+    <section id="books" class="py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="section-header">
+                <div class="badge badge-free mb-6">📚 World's Largest Trading Library</div>
+                <h2 class="section-title">FREE Trading <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Masterclass</span> Books</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    Access our exclusive collection of professional trading books worth $2,000+ - absolutely FREE. 
+                    Download instantly and start your journey to trading mastery today.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-16">
+                <!-- Trading Book 1 -->
+                <div class="dark-card overflow-hidden">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?w=300&h=200&fit=crop" alt="Forex Trading for Beginners" class="w-full h-48 object-cover">
+                        <div class="absolute top-3 right-3 bg-black/70 rounded-full p-2">
+                            <div class="flex items-center space-x-1 text-white">
+                                <span class="text-yellow-400">⭐</span>
+                                <span class="text-sm font-semibold">4.8</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-3 left-3">
+                            <span class="badge badge-free">Beginner</span>
+                        </div>
+                    </div>
+                    <div class="p-5 text-white">
+                        <h3 class="text-lg font-bold mb-2">📚 Forex Trading for Beginners</h3>
+                        <p class="text-gray-300 text-sm mb-4">Complete step-by-step guide to master forex trading from zero to profitable trader with real examples.</p>
+                        <div class="flex items-center justify-between text-xs text-gray-400 mb-4">
+                            <span class="flex items-center">📄 156 pages</span>
+                            <span class="flex items-center">⬇️ 12.5K</span>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="flex-1 btn-sm btn-primary">👁️ Read FREE</button>
+                            <button class="btn-sm btn-secondary">⬇️</button>
+                            <button class="btn-sm btn-secondary">📤</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trading Book 2 -->
+                <div class="dark-card overflow-hidden">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=300&h=200&fit=crop" alt="Technical Analysis Mastery" class="w-full h-48 object-cover">
+                        <div class="absolute top-3 right-3 bg-black/70 rounded-full p-2">
+                            <div class="flex items-center space-x-1 text-white">
+                                <span class="text-yellow-400">⭐</span>
+                                <span class="text-sm font-semibold">4.9</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-3 left-3">
+                            <span class="badge badge-new">Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="p-5 text-white">
+                        <h3 class="text-lg font-bold mb-2">📊 Technical Analysis Mastery</h3>
+                        <p class="text-gray-300 text-sm mb-4">Advanced chart reading techniques, candlestick patterns, and market psychology for predicting price movements.</p>
+                        <div class="flex items-center justify-between text-xs text-gray-400 mb-4">
+                            <span class="flex items-center">📄 234 pages</span>
+                            <span class="flex items-center">⬇️ 8.9K</span>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="flex-1 btn-sm btn-primary">👁️ Read FREE</button>
+                            <button class="btn-sm btn-secondary">⬇️</button>
+                            <button class="btn-sm btn-secondary">📤</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trading Book 3 -->
+                <div class="dark-card overflow-hidden">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=300&h=200&fit=crop" alt="Psychology of Trading" class="w-full h-48 object-cover">
+                        <div class="absolute top-3 right-3 bg-black/70 rounded-full p-2">
+                            <div class="flex items-center space-x-1 text-white">
+                                <span class="text-yellow-400">⭐</span>
+                                <span class="text-sm font-semibold">4.7</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-3 left-3">
+                            <span class="badge badge-pro">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="p-5 text-white">
+                        <h3 class="text-lg font-bold mb-2">🧠 Psychology of Trading</h3>
+                        <p class="text-gray-300 text-sm mb-4">Master your emotions, overcome fear and greed, develop winning mindset and mental discipline.</p>
+                        <div class="flex items-center justify-between text-xs text-gray-400 mb-4">
+                            <span class="flex items-center">📄 189 pages</span>
+                            <span class="flex items-center">⬇️ 7.6K</span>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="flex-1 btn-sm btn-primary">👁️ Read FREE</button>
+                            <button class="btn-sm btn-secondary">⬇️</button>
+                            <button class="btn-sm btn-secondary">📤</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trading Book 4 -->
+                <div class="dark-card overflow-hidden">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=300&h=200&fit=crop" alt="Risk Management Guide" class="w-full h-48 object-cover">
+                        <div class="absolute top-3 right-3 bg-black/70 rounded-full p-2">
+                            <div class="flex items-center space-x-1 text-white">
+                                <span class="text-yellow-400">⭐</span>
+                                <span class="text-sm font-semibold">4.8</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-3 left-3">
+                            <span class="badge badge-new">Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="p-5 text-white">
+                        <h3 class="text-lg font-bold mb-2">🛡️ Risk Management Guide</h3>
+                        <p class="text-gray-300 text-sm mb-4">Protect your capital with proven risk management strategies, position sizing, and portfolio protection.</p>
+                        <div class="flex items-center justify-between text-xs text-gray-400 mb-4">
+                            <span class="flex items-center">📄 145 pages</span>
+                            <span class="flex items-center">⬇️ 9.8K</span>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="flex-1 btn-sm btn-primary">👁️ Read FREE</button>
+                            <button class="btn-sm btn-secondary">⬇️</button>
+                            <button class="btn-sm btn-secondary">📤</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Library Statistics -->
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="dark-card text-center p-6">
+                    <div class="text-6xl mb-4">📚</div>
+                    <div class="text-3xl font-bold text-blue-400 mb-2">12+</div>
+                    <p class="text-gray-300">Expert Books</p>
+                </div>
+                <div class="dark-card text-center p-6">
+                    <div class="text-6xl mb-4">📄</div>
+                    <div class="text-3xl font-bold text-green-400 mb-2">2,500+</div>
+                    <p class="text-gray-300">Total Pages</p>
+                </div>
+                <div class="dark-card text-center p-6">
+                    <div class="text-6xl mb-4">⬇️</div>
+                    <div class="text-3xl font-bold text-purple-400 mb-2">150K+</div>
+                    <p class="text-gray-300">Downloads</p>
+                </div>
+                <div class="dark-card text-center p-6">
+                    <div class="text-6xl mb-4">⭐</div>
+                    <div class="text-3xl font-bold text-orange-400 mb-2">4.8★</div>
+                    <p class="text-gray-300">Avg Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Courses Section -->
+    <section id="courses" class="py-20 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="section-header">
+                <div class="badge badge-free mb-6">🎓 Professional Trading Education</div>
+                <h2 class="section-title">Master Trading with <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-500">Expert Courses</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    Learn from industry professionals with 15+ years of trading experience. 
+                    Our structured curriculum has helped over 50,000 traders achieve consistent profitability.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Course 1 -->
+                <div class="dark-card overflow-hidden">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?w=400&h=200&fit=crop" alt="Forex Trading Fundamentals" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="badge badge-free">Beginner</span>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            FREE
+                        </div>
+                        <div class="absolute bottom-4 left-4 flex items-center space-x-4 text-white text-sm bg-black/70 rounded-lg px-3 py-2">
+                            <span class="flex items-center">⏱️ 2 hours</span>
+                            <span class="flex items-center">📚 8 lessons</span>
+                        </div>
+                    </div>
+                    <div class="p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">Forex Trading Fundamentals</h3>
+                        <p class="text-gray-300 text-sm mb-3">Perfect starting point for complete beginners. Learn forex basics, market terminology, and build solid foundation.</p>
+                        <div class="flex items-center space-x-2 mb-3">
+                            <div class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center text-xs font-bold">JM</div>
+                            <span class="text-gray-400 text-sm">by John Martinez</span>
+                        </div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center space-x-1">
+                                <span class="text-yellow-400">⭐</span>
+                                <span class="text-white font-semibold">4.8</span>
+                                <span class="text-gray-400 text-sm">(2,450 students)</span>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="text-sm font-semibold text-white mb-2">What you'll master:</h4>
+                            <ul class="space-y-1">
+                                <li class="flex items-center text-gray-300 text-sm">
+                                    <span class="text-green-400 mr-2">✓</span>What is Forex Trading
+                                </li>
+                                <li class="flex items-center text-gray-300 text-sm">
+                                    <span class="text-green-400 mr-2">✓</span>Currency Pairs Explained
+                                </li>
+                                <li class="flex items-center text-gray-300 text-sm">
+                                    <span class="text-green-400 mr-2">✓</span>Market Hours & Sessions
+                                </li>
+                                <li class="flex items-center text-gray-300 text-sm">
+                                    <span class="text-green-400 mr-2">✓</span>Basic Terminology
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="flex-1 btn-free">▶️ Start FREE</button>
+                            <button class="btn-secondary">📤</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="dark-card overflow-hidden">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&h=200&fit=crop" alt="Technical Analysis Mastery" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="badge badge-new">Intermediate</span>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            FREE
+                        </div>
+                        <div class="absolute bottom-4 left-4 flex items-center space-x-4 text-white text-sm bg-black/70 rounded-lg px-3 py-2">
+                            <span class="flex items-center">⏱️ 4 hours</span>
+                            <span class="flex items-center">📚 12 lessons</span>
+                        </div>
+                    </div>
+                    <div class="p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">Technical Analysis Mastery</h3>
+                        <p class="text-gray-300 text-sm mb-3">Learn to read charts like a professional trader. Master candlestick patterns, indicators, and price action.</p>
+                        <div class="flex items-center space-x-2 mb-3">
+                            <div class="w-6 h-6 bg-purple-600 rounded-full flex items-center justify-center text-xs font-bold">ST</div>
+                            <span class="text-gray-400 text-sm">by Sarah Thompson</span>
+                        </div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center space-x-1">
+                                <span class="text-yellow-400">⭐</span>
+                                <span class="text-white font-semibold">4.9</span>
+                                <span class="text-gray-400 text-sm">(1,820 students)</span>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="text-sm font-semibold text-white mb-2">What you'll master:</h4>
+                            <ul class="space-y-1">
+                                <li class="flex items-center text-gray-300 text-sm">
+                                    <span class="text-green-400 mr-2">✓</span>Candlestick Patterns
+                                </li>
+                                <li class="flex items-center text-gray-300 text-sm">
+                                    <span class="text-green-400 mr-2">✓</span>Support & Resistance
+                                </li>
+                                <li class="flex items-center text-gray-300 text-sm">
+                                    <span class="text-green-400 mr-2">✓</span>Technical Indicators
+                                </li>
+                                <li class="flex items-center text-gray-300 text-sm">
+                                    <span class="text-green-400 mr-2">✓</span>Chart Patterns
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="flex-1 btn-free">▶️ Start FREE</button>
+                            <button class="btn-secondary">📤</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="dark-card overflow-hidden">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=200&fit=crop" alt="Trading Psychology Mastery" class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span class="badge badge-new">Intermediate</span>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            FREE
+                        </div>
+                        <div class="absolute bottom-4 left-4 flex items-center space-x-4 text-white text-sm bg-black/70 rounded-lg px-3 py-2">
+                            <span class="flex items-center">⏱️ 3 hours</span>
+                            <span class="flex items-center">📚 10 lessons</span>
+                        </div>
+                    </div>
+                    <div class="p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">Trading Psychology Mastery</h3>
+                        <p class="text-gray-300 text-sm mb-3">Master your emotions and develop the right trading mindset. Overcome fear, greed, and psychological barriers.</p>
+                        <div class="flex items-center space-x-2 mb-3">
+                            <div class="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center text-xs font-bold">MC</div>
+                            <span class="text-gray-400 text-sm">by Dr. Michael Chen</span>
+                        </div>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center space-x-1">
+                                <span class="text-yellow-400">⭐</span>
+                                <span class="text-white font-semibold">4.7</span>
+                                <span class="text-gray-400 text-sm">(1,340 students)</span>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="text-sm font-semibold text-white mb-2">What you'll master:</h4>
+                            <ul class="space-y-1">
+                                <li class="flex items-center text-gray-300 text-sm">
+                                    <span class="text-green-400 mr-2">✓</span>Risk Management
+                                </li>
+                                <li class="flex items-center text-gray-300 text-sm">
+                                    <span class="text-green-400 mr-2">✓</span>Emotional Control
+                                </li>
+                                <li class="flex items-center text-gray-300 text-sm">
+                                    <span class="text-green-400 mr-2">✓</span>Trading Discipline
+                                </li>
+                                <li class="flex items-center text-gray-300 text-sm">
+                                    <span class="text-green-400 mr-2">✓</span>Money Management
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="flex-1 btn-free">▶️ Start FREE</button>
+                            <button class="btn-secondary">📤</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trading Forum Section -->
+    <section id="forum" class="py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="section-header">
+                <div class="badge badge-hot mb-6">💬 World's Most Active Trading Community</div>
+                <h2 class="section-title">Connect with <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-500">Pro Traders</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    Join 250,000+ active traders sharing strategies, market insights, and success stories. 
+                    Get answers from experienced professionals and accelerate your trading journey.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-4 gap-8">
+                <!-- Forum Categories -->
+                <div class="lg:col-span-1">
+                    <div class="dark-card mb-6">
+                        <div class="p-6">
+                            <h3 class="text-white font-bold mb-6 flex items-center">
+                                💬 Hot Categories
+                            </h3>
+                            <div class="space-y-3">
+                                <div class="p-3 rounded-lg bg-green-600/20 border-l-4 border-green-500">
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center space-x-2">
+                                            <div class="text-green-400">🌱</div>
+                                            <div>
+                                                <div class="font-semibold text-white text-sm">Beginners Corner</div>
+                                                <div class="text-xs text-gray-400">1,245 posts today</div>
+                                            </div>
+                                        </div>
+                                        <span class="badge badge-hot">HOT</span>
+                                    </div>
+                                </div>
+                                <div class="p-3 rounded-lg hover:bg-slate-700/50 transition-colors cursor-pointer">
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center space-x-2">
+                                            <div class="text-blue-400">♟️</div>
+                                            <div>
+                                                <div class="font-semibold text-white text-sm">Pro Strategies</div>
+                                                <div class="text-xs text-gray-400">892 posts today</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-3 rounded-lg hover:bg-slate-700/50 transition-colors cursor-pointer">
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center space-x-2">
+                                            <div class="text-purple-400">📊</div>
+                                            <div>
+                                                <div class="font-semibold text-white text-sm">Market Analysis</div>
+                                                <div class="text-xs text-gray-400">567 posts today</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="w-full mt-6 btn-primary">
+                                💬 Start Discussion
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Top Contributors -->
+                    <div class="dark-card">
+                        <div class="p-6">
+                            <h3 class="text-white font-bold mb-6 flex items-center">
+                                🏆 Top Contributors
+                            </h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center space-x-3">
+                                    <div class="relative">
+                                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm">TP</div>
+                                        <div class="absolute -top-1 -right-1 text-yellow-400">👑</div>
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="text-sm font-medium text-white flex items-center">
+                                            TradeMaster Pro
+                                            <span class="badge badge-pro ml-2">PRO</span>
+                                        </div>
+                                        <div class="text-xs text-gray-400">1000 helpful posts</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm">FN</div>
+                                    <div class="flex-1">
+                                        <div class="text-sm font-medium text-white flex items-center">
+                                            ForexNinja
+                                            <span class="badge badge-pro ml-2">PRO</span>
+                                        </div>
+                                        <div class="text-xs text-gray-400">900 helpful posts</div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-sm">MW</div>
+                                    <div class="flex-1">
+                                        <div class="text-sm font-medium text-white flex items-center">
+                                            MarketWizard
+                                            <span class="badge badge-pro ml-2">PRO</span>
+                                        </div>
+                                        <div class="text-xs text-gray-400">800 helpful posts</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Forum Posts -->
+                <div class="lg:col-span-3">
+                    <div class="space-y-6">
+                        <!-- Forum Post 1 -->
+                        <div class="dark-card">
+                            <div class="p-6">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">TP</div>
+                                    <div class="flex-1">
+                                        <div class="flex items-center justify-between mb-3">
+                                            <div class="flex items-center space-x-2">
+                                                <span class="font-semibold text-white">TradeMaster Pro</span>
+                                                <span class="text-sm text-gray-400">• 2 hours ago</span>
+                                                <span class="badge badge-hot">HOT</span>
+                                            </div>
+                                            <span class="badge badge-new">Strategy Discussion</span>
+                                        </div>
+                                        <h3 class="text-lg font-semibold text-white mb-3 hover:text-blue-400 cursor-pointer transition-colors">
+                                            My $500 to $15,000 Journey - Complete Strategy Revealed
+                                        </h3>
+                                        <p class="text-gray-300 mb-4">After 8 months of consistent trading, I finally cracked the code. Here's my complete strategy with screenshots and proof...</p>
+                                        <div class="flex items-center justify-between">
+                                            <div class="flex items-center space-x-4 text-sm text-gray-400">
+                                                <div class="flex items-center hover:text-red-400 cursor-pointer transition-colors">
+                                                    ⭐ 45 likes
+                                                </div>
+                                                <div class="flex items-center">
+                                                    💬 24 replies
+                                                </div>
+                                                <div class="flex items-center">
+                                                    👁️ 1,250 views
+                                                </div>
+                                            </div>
+                                            <button class="btn-sm btn-secondary">📤 Share</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Forum Post 2 -->
+                        <div class="dark-card">
+                            <div class="p-6">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold">FN</div>
+                                    <div class="flex-1">
+                                        <div class="flex items-center justify-between mb-3">
+                                            <div class="flex items-center space-x-2">
+                                                <span class="font-semibold text-white">ForexNinja</span>
+                                                <span class="text-sm text-gray-400">• 4 hours ago</span>
+                                                <span class="badge badge-hot">HOT</span>
+                                            </div>
+                                            <span class="badge badge-new">Strategy Discussion</span>
+                                        </div>
+                                        <h3 class="text-lg font-semibold text-white mb-3 hover:text-blue-400 cursor-pointer transition-colors">
+                                            LIVE: 85% Win Rate Scalping Strategy (Screenshots Inside)
+                                        </h3>
+                                        <p class="text-gray-300 mb-4">This 5-minute scalping strategy has been crushing it for me. Sharing live trades and exact entry/exit points...</p>
+                                        <div class="flex items-center justify-between">
+                                            <div class="flex items-center space-x-4 text-sm text-gray-400">
+                                                <div class="flex items-center hover:text-red-400 cursor-pointer transition-colors">
+                                                    ⭐ 62 likes
+                                                </div>
+                                                <div class="flex items-center">
+                                                    💬 18 replies
+                                                </div>
+                                                <div class="flex items-center">
+                                                    👁️ 890 views
+                                                </div>
+                                            </div>
+                                            <button class="btn-sm btn-secondary">📤 Share</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Forum Post 3 -->
+                        <div class="dark-card">
+                            <div class="p-6">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold">NT</div>
+                                    <div class="flex-1">
+                                        <div class="flex items-center justify-between mb-3">
+                                            <div class="flex items-center space-x-2">
+                                                <span class="font-semibold text-white">NewsTrader</span>
+                                                <span class="text-sm text-gray-400">• 6 hours ago</span>
+                                            </div>
+                                            <span class="badge badge-pro">Market Analysis</span>
+                                        </div>
+                                        <h3 class="text-lg font-semibold text-white mb-3 hover:text-blue-400 cursor-pointer transition-colors">
+                                            How to Handle Market Volatility During NFP (News Trading Guide)
+                                        </h3>
+                                        <p class="text-gray-300 mb-4">NFP Friday can be extremely profitable if you know what to do. Here's my complete news trading strategy with risk management...</p>
+                                        <div class="flex items-center justify-between">
+                                            <div class="flex items-center space-x-4 text-sm text-gray-400">
+                                                <div class="flex items-center hover:text-red-400 cursor-pointer transition-colors">
+                                                    ⭐ 78 likes
+                                                </div>
+                                                <div class="flex items-center">
+                                                    💬 31 replies
+                                                </div>
+                                                <div class="flex items-center">
+                                                    👁️ 1,560 views
+                                                </div>
+                                            </div>
+                                            <button class="btn-sm btn-secondary">📤 Share</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-12">
+                        <button class="btn-lg btn-primary mr-4">
+                            💬 Join Discussion
+                        </button>
+                        <button class="btn-lg btn-secondary">
+                            Browse All Topics
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Trading Tools Section -->
+    <section id="tools" class="py-20 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="section-header">
+                <div class="badge badge-hot mb-6">🛠️ Professional Trading Arsenal</div>
+                <h2 class="section-title">Pro Trading <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">Tools & Calculators</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    Access the same professional-grade tools used by institutional traders and hedge funds. 
+                    Calculate risk, optimize positions, and maximize your trading performance.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Position Size Calculator -->
+                <div class="dark-card overflow-hidden">
+                    <div class="relative p-6 bg-gradient-to-br from-blue-600/10 to-blue-800/10">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-blue-600/20 rounded-bl-full"></div>
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-xl">
+                                <span class="text-white text-2xl">🧮</span>
+                            </div>
+                            <h3 class="text-white text-xl font-bold">Position Size Calculator</h3>
+                            <p class="text-gray-300">Calculate optimal position sizes for maximum profit</p>
+                        </div>
+                        <div class="space-y-3 mb-6">
+                            <input type="number" placeholder="Account Balance ($)" class="w-full p-3 border border-slate-600 rounded-lg bg-slate-700/50 text-white placeholder-gray-400">
+                            <input type="number" placeholder="Risk Percentage (%)" class="w-full p-3 border border-slate-600 rounded-lg bg-slate-700/50 text-white placeholder-gray-400">
+                            <input type="number" placeholder="Stop Loss (pips)" class="w-full p-3 border border-slate-600 rounded-lg bg-slate-700/50 text-white placeholder-gray-400">
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="flex-1 btn-primary">⚡ Calculate</button>
+                            <button class="btn-secondary">📤</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profit/Loss Calculator -->
+                <div class="dark-card overflow-hidden">
+                    <div class="relative p-6 bg-gradient-to-br from-green-600/10 to-green-800/10">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-green-600/20 rounded-bl-full"></div>
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-xl">
+                                <span class="text-white text-2xl">📊</span>
+                            </div>
+                            <h3 class="text-white text-xl font-bold">Profit/Loss Calculator</h3>
+                            <p class="text-gray-300">Estimate potential returns and losses</p>
+                        </div>
+                        <div class="space-y-3 mb-6">
+                            <select class="w-full p-3 border border-slate-600 rounded-lg bg-slate-700/50 text-white">
+                                <option>EUR/USD</option>
+                                <option>GBP/USD</option>
+                                <option>USD/JPY</option>
+                                <option>AUD/USD</option>
+                            </select>
+                            <input type="number" placeholder="Entry Price" class="w-full p-3 border border-slate-600 rounded-lg bg-slate-700/50 text-white placeholder-gray-400">
+                            <input type="number" placeholder="Exit Price" class="w-full p-3 border border-slate-600 rounded-lg bg-slate-700/50 text-white placeholder-gray-400">
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="flex-1 btn-free">🎯 Calculate P&L</button>
+                            <button class="btn-secondary">📤</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Market Hours -->
+                <div class="dark-card overflow-hidden">
+                    <div class="relative p-6 bg-gradient-to-br from-purple-600/10 to-purple-800/10">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-purple-600/20 rounded-bl-full"></div>
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-xl">
+                                <span class="text-white text-2xl">⏰</span>
+                            </div>
+                            <h3 class="text-white text-xl font-bold">Global Market Sessions</h3>
+                            <p class="text-gray-300">Track worldwide trading hours</p>
+                        </div>
+                        <div class="space-y-3 mb-6">
+                            <div class="flex justify-between items-center p-3 bg-slate-700/30 rounded-lg border border-slate-600">
+                                <div class="flex items-center space-x-3">
+                                    <div class="pulse-dot w-3 h-3 bg-green-400 rounded-full"></div>
+                                    <span class="font-medium text-white">London</span>
+                                </div>
+                                <span class="text-green-400 font-bold">● OPEN</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-slate-700/30 rounded-lg border border-slate-600">
+                                <div class="flex items-center space-x-3">
+                                    <div class="pulse-dot w-3 h-3 bg-green-400 rounded-full"></div>
+                                    <span class="font-medium text-white">New York</span>
+                                </div>
+                                <span class="text-green-400 font-bold">● OPEN</span>
+                            </div>
+                            <div class="flex justify-between items-center p-3 bg-slate-700/30 rounded-lg border border-slate-600">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-3 h-3 bg-red-400 rounded-full"></div>
+                                    <span class="font-medium text-white">Tokyo</span>
+                                </div>
+                                <span class="text-red-400 font-bold">● CLOSED</span>
+                            </div>
+                        </div>
+                        <div class="flex space-x-2">
+                            <button class="flex-1 btn-primary">🌐 Full Schedule</button>
+                            <button class="btn-secondary">📤</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Trading Community Section -->
+    <section id="community" class="py-20 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="section-header">
+                <div class="badge badge-pro mb-6">🌐 Global Trading Network</div>
+                <h2 class="section-title">Connect & <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-rose-500">Share Success</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">
+                    Join our vibrant community across all major platforms. Share your trading journey, 
+                    learn from others, and celebrate wins together with thousands of like-minded traders.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Social Media Cards -->
+                <div class="dark-card text-center hover:transform hover:scale-105 transition-all duration-300 overflow-hidden">
+                    <div class="relative p-8">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-blue-600"></div>
+                        <div class="text-6xl mb-4">📘</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Facebook</h3>
+                        <p class="text-gray-300 mb-4 text-sm">Join 150K+ traders sharing daily insights and market updates</p>
+                        <div class="text-2xl font-bold text-blue-400 mb-2">150K+</div>
+                        <div class="text-gray-400 text-sm mb-4">Active Members</div>
+                        <button class="btn-secondary w-full">📤 Follow & Share</button>
+                    </div>
+                </div>
+
+                <div class="dark-card text-center hover:transform hover:scale-105 transition-all duration-300 overflow-hidden">
+                    <div class="relative p-8">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-sky-500"></div>
+                        <div class="text-6xl mb-4">🐦</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">Twitter</h3>
+                        <p class="text-gray-300 mb-4 text-sm">Real-time market alerts and professional trading tips</p>
+                        <div class="text-2xl font-bold text-sky-400 mb-2">85K+</div>
+                        <div class="text-gray-400 text-sm mb-4">Daily Followers</div>
+                        <button class="btn-secondary w-full">📤 Tweet & Follow</button>
+                    </div>
+                </div>
+
+                <div class="dark-card text-center hover:transform hover:scale-105 transition-all duration-300 overflow-hidden">
+                    <div class="relative p-8">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-blue-700"></div>
+                        <div class="text-6xl mb-4">💼</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">LinkedIn</h3>
+                        <p class="text-gray-300 mb-4 text-sm">Professional traders and industry experts network</p>
+                        <div class="text-2xl font-bold text-blue-400 mb-2">45K+</div>
+                        <div class="text-gray-400 text-sm mb-4">Professionals</div>
+                        <button class="btn-secondary w-full">📤 Connect & Share</button>
+                    </div>
+                </div>
+
+                <div class="dark-card text-center hover:transform hover:scale-105 transition-all duration-300 overflow-hidden">
+                    <div class="relative p-8">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-red-600"></div>
+                        <div class="text-6xl mb-4">📺</div>
+                        <h3 class="text-xl font-semibold text-white mb-2">YouTube</h3>
+                        <p class="text-gray-300 mb-4 text-sm">Free video tutorials and live trading sessions</p>
+                        <div class="text-2xl font-bold text-red-400 mb-2">250K+</div>
+                        <div class="text-gray-400 text-sm mb-4">Subscribers</div>
+                        <button class="btn-secondary w-full">📤 Subscribe & Share</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Share Activity Section -->
+            <div class="dark-card">
+                <div class="p-8">
+                    <h3 class="text-3xl font-bold text-white mb-6 text-center flex items-center justify-center">
+                        🤝 Share Your Trading Journey
+                    </h3>
+                    <div class="max-w-3xl mx-auto">
+                        <div class="bg-slate-700/50 rounded-xl p-6 border border-slate-600">
+                            <textarea placeholder="Share your trading insights, wins, lessons learned, or ask the community for advice..." class="w-full h-40 p-4 border border-slate-600 rounded-lg bg-slate-800 text-white placeholder-gray-400 resize-none"></textarea>
+                            <div class="flex justify-between items-center mt-6">
+                                <div class="flex space-x-3">
+                                    <button class="text-3xl hover:scale-125 transition-transform">📈</button>
+                                    <button class="text-3xl hover:scale-125 transition-transform">📉</button>
+                                    <button class="text-3xl hover:scale-125 transition-transform">💰</button>
+                                    <button class="text-3xl hover:scale-125 transition-transform">🎯</button>
+                                    <button class="text-3xl hover:scale-125 transition-transform">🚀</button>
+                                    <button class="text-3xl hover:scale-125 transition-transform">🔥</button>
+                                    <button class="text-3xl hover:scale-125 transition-transform">💪</button>
+                                </div>
+                                <div class="flex space-x-3">
+                                    <button class="btn-sm btn-primary">📘 Facebook</button>
+                                    <button class="btn-sm btn-primary">🐦 Twitter</button>
+                                    <button class="btn-sm btn-primary">💼 LinkedIn</button>
+                                    <button class="btn-sm btn-primary">📺 YouTube</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800 py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">📈</span>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">ForexMaster</h3>
+                            <span class="text-blue-400 font-medium">Pro</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Empowering traders worldwide with free education, professional tools, and community support. 
+                        Join 250,000+ successful traders who transformed their lives through trading mastery.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors">📘</a>
+                        <a href="#" class="w-10 h-10 bg-sky-500 rounded-lg flex items-center justify-center hover:bg-sky-600 transition-colors">🐦</a>
+                        <a href="#" class="w-10 h-10 bg-blue-700 rounded-lg flex items-center justify-center hover:bg-blue-800 transition-colors">💼</a>
+                        <a href="#" class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center hover:bg-red-700 transition-colors">📺</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-6 text-lg">Free Resources</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#books" class="hover:text-blue-400 transition-colors flex items-center">📚 Trading Library</a></li>
+                        <li><a href="#courses" class="hover:text-blue-400 transition-colors flex items-center">🎓 Expert Courses</a></li>
+                        <li><a href="#tools" class="hover:text-blue-400 transition-colors flex items-center">🛠️ Pro Tools</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors flex items-center">📊 Live Data</a></li>
+                        <li><a href="#blog" class="hover:text-blue-400 transition-colors flex items-center">📰 Trading Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-6 text-lg">Community</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#forum" class="hover:text-blue-400 transition-colors flex items-center">💬 Trading Forum</a></li>
+                        <li><a href="#community" class="hover:text-blue-400 transition-colors flex items-center">🌐 Social Network</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors flex items-center">🏆 Success Stories</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors flex items-center">📅 Live Events</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors flex items-center">🤝 Mentorship</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-6 text-lg">Support & Legal</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Help Center</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Contact Support</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition-colors">Risk Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400 mb-4">
+                    © 2024 ForexMaster Pro. All rights reserved. Free education for all traders worldwide.
+                </p>
+                <p class="text-gray-500 text-sm">
+                    Trading involves risk and may not be suitable for all investors. Past performance does not guarantee future results.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Enhanced JavaScript functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            initializePlatform();
+            startAnimations();
+            initializeRealTimeData();
+            setupInteractivity();
+        });
+        
+        function initializePlatform() {
+            console.log('ForexMaster Pro Platform Initialized');
+            showWelcomeMessage();
+        }
+        
+        function showWelcomeMessage() {
+            setTimeout(() => {
+                showNotification('🎉 Welcome to ForexMaster Pro! All content is FREE forever!', 'success');
+            }, 2000);
+        }
+        
+        function startAnimations() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            document.querySelectorAll('.fade-in-up, .slide-in-left, .scale-in').forEach(el => {
+                el.style.animationPlayState = 'paused';
+                observer.observe(el);
+            });
+        }
+        
+        function initializeRealTimeData() {
+            updatePlatformStats();
+            setInterval(updatePlatformStats, 30000);
+        }
+        
+        function updatePlatformStats() {
+            // Simulate real-time platform activity
+            const onlineUsers = document.querySelector('.text-green-400');
+            if (onlineUsers) {
+                const currentCount = parseInt(onlineUsers.textContent.replace(',', ''));
+                const newCount = currentCount + Math.floor(Math.random() * 100 - 50);
+                onlineUsers.textContent = Math.max(45000, newCount).toLocaleString();
+            }
+        }
+        
+        function setupInteractivity() {
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Button loading states
+            document.querySelectorAll('button').forEach(button => {
+                button.addEventListener('click', function() {
+                    if (!this.disabled && !this.classList.contains('no-loading')) {
+                        const originalText = this.innerHTML;
+                        this.innerHTML = '<div class="loading-spinner mx-auto"></div>';
+                        this.disabled = true;
+                        
+                        setTimeout(() => {
+                            this.innerHTML = originalText;
+                            this.disabled = false;
+                        }, 2000);
+                    }
+                });
+            });
+        }
+        
+        // Action Functions
+        function startLearning() {
+            showNotification('🚀 Welcome to your FREE trading education journey!', 'success');
+            setTimeout(() => {
+                document.querySelector('#books').scrollIntoView({ behavior: 'smooth' });
+            }, 1000);
+        }
+        
+        function joinCommunity() {
+            showNotification('👥 Joining our amazing trading community!', 'success');
+            setTimeout(() => {
+                document.querySelector('#forum').scrollIntoView({ behavior: 'smooth' });
+            }, 1000);
+        }
+        
+        function watchDemo() {
+            showNotification('▶️ Loading demo video...', 'info');
+            // Demo video functionality would go here
+        }
+        
+        // Utility Functions
+        function showNotification(message, type = 'success') {
+            const notification = document.createElement('div');
+            notification.className = `fixed top-4 right-4 z-50 p-4 rounded-lg text-white max-w-sm ${
+                type === 'success' ? 'bg-green-600' : 
+                type === 'error' ? 'bg-red-600' : 
+                type === 'info' ? 'bg-blue-600' :
+                'bg-gray-600'
+            } shadow-lg transform translate-x-full transition-transform duration-300`;
+            notification.textContent = message;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+            
+            setTimeout(() => {
+                notification.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        document.body.removeChild(notification);
+                    }
+                }, 300);
+            }, 4000);
+        }
+        
+        // Track user engagement
+        function trackEngagement(action) {
+            console.log(`User engagement: ${action}`);
+            // Analytics tracking would go here
+        }
+    </script>
+</body>
+</html>
